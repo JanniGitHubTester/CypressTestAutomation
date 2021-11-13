@@ -19,3 +19,15 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(System.DefaultWorkingDirectory)/cypress/reports'
+    customCommand: 'run script-electron'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '*.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)/cypress/reports'
