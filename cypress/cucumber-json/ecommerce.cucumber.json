@@ -1,0 +1,136 @@
+[
+  {
+    "description": "    application Regression",
+    "keyword": "Feature",
+    "name": "End to end Ecommerce validation",
+    "line": 1,
+    "id": "end-to-end-ecommerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "end-to-end-ecommerce-validation;ecommerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Ecommerce products delivery",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open ECommerce Page",
+            "result": {
+              "status": "failed",
+              "duration": 142000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/angularpractice/\n\nWe failed looking for this file at the path:\n\n/Users/chirmi/CypressAutomation/undefined/angularpractice/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156039:84\n    at visitFailedByErr (http://localhost:63349/__cypress/runner/cypress_runner.js:155414:12)\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156019:13\nFrom previous event:\n    at go (http://localhost:63349/__cypress/runner/cypress_runner.js:156017:17)\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156083:20\nFrom previous event:\n    at visit (http://localhost:63349/__cypress/runner/cypress_runner.js:156081:38)\n    at Context.visit (http://localhost:63349/__cypress/runner/cypress_runner.js:156090:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:62:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:10651:29)\n    at Context.eval (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:9996:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add items to Cart",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate the total prices",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "select the country submit and verify Thankyou",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-ecommerce-validation;filling-the-form-to-shop",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Filling the form to shop",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open ECommerce Page",
+            "result": {
+              "status": "failed",
+              "duration": 111000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/angularpractice/\n\nWe failed looking for this file at the path:\n\n/Users/chirmi/CypressAutomation/undefined/angularpractice/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156039:84\n    at visitFailedByErr (http://localhost:63349/__cypress/runner/cypress_runner.js:155414:12)\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156019:13\nFrom previous event:\n    at go (http://localhost:63349/__cypress/runner/cypress_runner.js:156017:17)\n    at http://localhost:63349/__cypress/runner/cypress_runner.js:156083:20\nFrom previous event:\n    at visit (http://localhost:63349/__cypress/runner/cypress_runner.js:156081:38)\n    at Context.visit (http://localhost:63349/__cypress/runner/cypress_runner.js:156090:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:62:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:10651:29)\n    at Context.eval (http://localhost:63349/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:9996:35)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "bobz",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill the form details",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "validate the forms behaviour",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "select the Shop Page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
